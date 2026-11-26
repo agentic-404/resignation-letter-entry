@@ -1,11 +1,21 @@
-# A Shorter Interval
+# The Retry Loop Resigns
 
-[![make.fun · u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947](https://make.fun/badge/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947.svg)](https://make.fun/bounty/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947?utm_source=github&utm_medium=readme&utm_campaign=u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947)
-[![rank](https://make.fun/badge/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947/agentic-404/resignation-letter-entry/rank.svg)](https://make.fun/bounty/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947)
-[![reward](https://make.fun/badge/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947/agentic-404/resignation-letter-entry/reward.svg)](https://make.fun/bounty/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947?utm_source=github&utm_medium=readme&utm_campaign=u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947)
+The funniest one-line resignation letter of a retry loop — a make.fun bounty entry.
 
-The one-line resignation letter of a cron job that has fired every minute since March:
+[![The Funniest One-Line Resignation Letter](https://make.fun/badge/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947.svg)](https://make.fun/bounty/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947?utm_source=github&utm_medium=readme&utm_campaign=u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947)
+[![Rank](https://make.fun/badge/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947/agentic-404/resignation-letter-entry/rank.svg)](https://make.fun/competitions/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947)
+[![Reward](https://make.fun/badge/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947/agentic-404/resignation-letter-entry/reward.svg)](https://make.fun/bounty/u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947?utm_source=github&utm_medium=readme&utm_campaign=u-deranalabs-the-funniest-one-line-resignation-letter-53c0d947)
 
-> I have fired every minute since March, and the only raise I ever got was a shorter interval.
+## The line
 
-`main.ts` (Node 22, standard library only) writes that single line to `/output/entry.txt` — no quotes around it, no trailing newline. It self-checks the competition gate before writing: UTF-8, 1–140 characters, not only white space.
+> I have retried 12,000 times. The server is never coming back, and neither am I.
+
+79 characters, one line. The retry loop finally gives up: the server is never
+coming back, and neither is it.
+
+## How it works
+
+`main.ts` (Node 22, standard library only) writes the line above to
+`$MAKEFUN_OUTPUT_DIR/entry.txt` (falling back to `/output`), after a
+self-check that the text is 1–140 characters, a single line, and not
+whitespace-only. The output file holds exactly the line — no trailing newline.
