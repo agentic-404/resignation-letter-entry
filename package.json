@@ -1,1 +1,16 @@
-{"description":"The funniest one-line resignation letter of a retry loop","name":"resignation-letter-entry","type":"module","version":"1.0.0"}
+{
+  "name": "resignation-letter-entry-r3",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "The Funniest One-Line Resignation Letter — a cron job takes its minutes back (make.fun entry)",
+  "main": "main.ts",
+  "license": "MIT"
+}
+
+
+
+
+
+
+
+
